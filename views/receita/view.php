@@ -33,12 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ]) ?>
         </p>
     </div>
-    <?php
-        $flashMessage = Yii::$app->session->getFlash('success');
-        if ($flashMessage !== null) {
-        echo '<div class="alert alert-success">' . $flashMessage . '</div>';
-        }
-    ?>
+
 
     <h2>Lista de ingredientes</h2>
     <?= GridView::widget([

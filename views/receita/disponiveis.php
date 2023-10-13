@@ -17,7 +17,6 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="header">
     <h1><?= Html::encode($this->title) ?></h1>
 </div>
-
 <div class="receitas-container">
     <?php if (empty($receitas)) : ?>
         <div class="empty-message">
@@ -40,10 +39,12 @@ $this->params['breadcrumbs'][] = $this->title;
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($receita->getReceitaIngredientes()->all() as $ingrediente) : ?>
+                            <?php foreach ($receita->receitaIngredientes as $receitaIngrediente) : ?>
                                 <tr>
-                                    <td><?= Html::encode($ingrediente->getIngrediente()->one()->nome) ?></td>
-                                    <td><?= Html::encode($ingrediente->quantidade) ?></td>
+                                    <td><?= $receitaIngrediente->ingrediente->nome ?></td>
+                                    <td>
+                                        <?= $receitaIngrediente->quantidade ?>
+                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
