@@ -86,22 +86,6 @@ $this->params['breadcrumbs'][] = $this->title;
         padding: 20px 0px 0px 0px
     }
 
-    #alert{
-        position: absolute;
-        border-radius: 5px;
-        padding:10px;
-        right:0;
-        margin:15px;
-        font-size:15px;
-        color:white;
-    }
-
-    .flash-error{
-        background-color:red;
-    }
-    .flash-success{
-        background-color:green;
-    }
 </style>
 
 <script>

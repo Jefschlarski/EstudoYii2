@@ -44,25 +44,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 
-<style>
-      #alert{
-        position: absolute;
-        border-radius: 5px;
-        padding:10px;
-        right:0;
-        margin:15px;
-        font-size:15px;
-        color:white;
-    }
-
-    .flash-error{
-        background-color:red;
-    }
-    .flash-success{
-        background-color:green;
-    }
-</style>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {

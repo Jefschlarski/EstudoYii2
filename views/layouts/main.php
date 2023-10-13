@@ -77,5 +77,24 @@ AppAsset::register($this);
     .custom-nav a:hover {
 
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        
+    }
+
+    #alert{
+        position: absolute;
+        border-radius: 5px;
+        padding:15px;
+        right:0;
+        margin:15px;
+        font-weight:bold;
+        font-size:20px;
+        color:white;
+    }
+
+    .flash-error{
+        background-color:red;
+    }
+    .flash-success{
+        background-color:green;
     }
 </style>
